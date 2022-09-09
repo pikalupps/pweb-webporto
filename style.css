@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --color_primary: #145da0;
+  --color_bg: #f3f6fd;
+  --font_big1: 130px;
+  --font_big2: 80px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color_primary);
+}
+
+header {
+  height: 70px;
+  background-color: var(--color_bg);
+}
+
+header h1 {
+  display: inline-block;
+  padding: 16px 24px;
+  text-transform: uppercase;
+}
+
+header h1 a {
+  color: var(--color_primary);
+}
+
+header h1 a:hover {
+  color: var(--color_primary);
+}
+
+header ul {
+  float: right;
+}
+
+header ul li {
+  padding: 21px 24px;
+  display: inline-block;
+}
+
+header ul li a {
+  color: var(--color_primary);
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+header ul li a:hover {
+  color: white;
+  background-color: var(--color_primary);
+}
+
+.navbar_menu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.sec_one {
+  background: var(--color_bg);
+}
+.sec_two {
+  background: var(--color_bg);
+}
+.sec_three {
+  background: coral;
+}
+.sec_four {
+  background: var(--color_bg);
+}
+.sec_five {
+  background: var(--color_bg);
+  background-attachment: fixed;
+  overflow: hidden;
+  cursor: none;
+}
+
+.sec_five h1 {
+  text-align: center;
+  object-fit: cover;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+}
+
+.banner_text {
+  padding: 150px 150px 0px 150px;
+  position: relative;
+}
+
+.banner h1 {
+  font-size: var(--font_big1);
+}
+
+.banner h2 {
+  font-size: var(--font_big2);
+}
+
+.banner img {
+  position: absolute;
+  float: right;
+  top: -80px;
+  right: 100px;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  object-position: 0% 0;
+  animation: animate 5s linear infinite;
+}
+
+.socialmedia {
+  padding-left: 150px;
+}
+
+.socialmedia ul {
+  float: left;
+}
+
+.socialmedia ul li {
+  height: 60px;
+  width: 60px;
+  margin: 0 8px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.01);
+  transition: all 0.3s ease-out;
+}
+
+.socialmedia ul li:hover {
+  width: 200px;
+}
+
+.socialmedia ul li i {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  line-height: 60px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.socialmedia ul:nth-child(1):hover li i {
+  background-color: #e1306c;
+}
+
+.socialmedia ul:nth-child(2):hover li i {
+  background-color: #ff0000;
+}
+
+.socialmedia ul:nth-child(3):hover li i {
+  background-color: #333;
+}
+
+.socialmedia ul:nth-child(4):hover li i {
+  background-color: #1da1f2;
+}
+
+.socialmedia ul:hover li i {
+  color: #ffffff;
+}
+
+.socialmedia ul li span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 5px;
+}
+
+.socialmedia ul:nth-child(1):hover li span {
+  color: #e1306c;
+}
+
+.socialmedia ul:nth-child(2):hover li span {
+  color: #ff0000;
+}
+
+.socialmedia ul:nth-child(3):hover li span {
+  color: #333;
+}
+
+.socialmedia ul:nth-child(4):hover li span {
+  color: #1da1f2;
+}
+
+.titlepage {
+  text-align: center;
+  border: 1px solid;
+  padding: 24px;
+}
+
+.projectcard {
+  border: 1px solid;
+  justify-content: center;
+  text-align: center;
+}
+
+.projectcard ul {
+  display: inline-block;
+}
+
+.projectcard ul li {
+  height: 220px;
+  width: 330px;
+  margin: 25px;
+  background-color: white;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0px 10px 10px rgba(47, 108, 238, 0.05);
+}
+
+.projectcard ul li img {
+  height: 200px;
+  justify-content: center;
+  margin: 15px;
+  float: left;
+  border-radius: 12px 0px 0px 12px;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+}
+
+.cursor {
+  width: 200px;
+  height: 200px;
+  background: url(img/MacBook\ Pro\ -\ 1.png);
+  background-attachment: fixed;
+  border-radius: 50%;
+  position: relative;
+  object-fit: cover;
+}
