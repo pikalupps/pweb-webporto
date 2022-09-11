@@ -12,26 +12,223 @@
     />
   </head>
   <body>
-    <div id="container">
-      <section id="sec_one">
-        <header>
-          <div class="navbar_menu">
-            <h1><a href="#">Pikalup</a></h1>
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">Skill</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">Portfolio</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">Contact</a></li>
-            </ul>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">PikaLupp</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contactme
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <div class="nav__toggles" id="nav-toggle">
+            <i class="uil uil-apps"></i>
           </div>
-        </header>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.instagram.com/putudhika__/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-instagram-alt"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/putu-dhika-bb0897220/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin"></i>
+              </a>
+
+              <a
+                href="https://github.com/pikaluv"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <img src="img/face.png" alt="" />
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Hello, I'm Dhika</h1>
+              <h3 class="home__subtitle">Informatics Students</h3>
+              <p class="home__description">
+                Informatics is a big world, let's explore it together
+              </p>
+
+              <a href="#contact" class="button button--flex"
+                >Contact Me<i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scrooll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scrooll-arrow"></i>
+            </a>
+          </div>
+        </div>
       </section>
-    </div>
+
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
+
+        <div class="about__container container grid">
+          <img src="img/Aboutphoto.png" alt="" class="about__img" />
+
+          <div class="about__data">
+            <p class="about__description">
+              Hello, i'm dhika, Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Officiis quos saepe autem necessitatibus illum
+              vel debitis fugiat, ipsum sed veritatis reprehenderit voluptatum
+              enim deserunt fuga consequuntur tempora dolores laudantium
+              quibusdam ad quasi minima obcaecati quod? Vitae ab unde eveniet
+              eaque fugiat recusandae, consectetur dignissimos suscipit hic
+              ipsam quasi modi incidunt.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My thecnical skills</span>
+
+        <div class="skills__container container grid">
+          <div class="skills__content">
+            <img src="img/skills1.png" alt="" class="skills__img" />
+
+            <div class="skills__data">
+              <h3 class="skills__title">Programming Language</h3>
+              <p class="project__description">
+                C, C++, Java, Kotlin, HTML/CSS, JS
+              </p>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <img src="img/skills2.png" alt="" class="skills__img" />
+
+            <div class="skills__data">
+              <h3 class="skills__title">Interface / Design</h3>
+              <p class="project__description">Figma, Photoshop, Illustrator</p>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <img src="img/skills3.png" alt="" class="skills__img" />
+
+            <div class="skills__data">
+              <h3 class="skills__title">Video Editing</h3>
+              <p class="project__description">Premiere Pro</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtile">081 246 588 XXX</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtile">dhikaswind@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtile">Kota Kupang - NTT</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input type="email" class="contact__input" />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a href="#" class="button button--flex">
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
